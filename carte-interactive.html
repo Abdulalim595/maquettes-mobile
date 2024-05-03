@@ -106,8 +106,11 @@
       <!-- ===================== HERO AREA END ===================== -->
 
       <!-- ===================== DOCUMENT-SECTION AREA START ===================== -->
-      <section id="document__section" class="document__section">
-        <div class="document__top__btn">
+      <section
+        id="document__section"
+        class="document__section active__locations"
+      >
+        <div class="document__top__btn document__top__btn2">
           <div class="filter">
             <!-- Button trigger modal -->
             <button
@@ -735,312 +738,355 @@
               Décembre <span><i class="fa-solid fa-sort-down"></i></span>
             </button>
           </div>
-          <div class="carte__liste d_top_btn listing__carte">
-            <!-- <a href="#"
-              ><img src="assets/img/legende.svg" alt="" /><span
-                >Légende</span
-              ></a
-            > -->
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal1"
+          >
+            <img src="assets/img/legende.svg" alt="" />Légende
+          </button>
 
-            <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal1"
-            >
-              <img src="assets/img/legende.svg" alt="" />Légende
-            </button>
-
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="exampleModal1"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <img src="assets/img/legende_icon.svg" alt="" />
-                    <h4>Légende</h4>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img src="assets/img/legende_icon.svg" alt="" />
+                  <h4>Légende</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="modal__card">
+                    <ul>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon1.svg"
+                            alt=""
+                          />Associations</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon2.svg"
+                            alt=""
+                          />Commerces</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon3.svg"
+                            alt=""
+                          />Événements</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon4.svg"
+                            alt=""
+                          />Grande surface</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon5.svg"
+                            alt=""
+                          />Mairie</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon6.svg"
+                            alt=""
+                          />Covoiturage</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon7.svg"
+                            alt=""
+                          />Sport</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon8.svg"
+                            alt=""
+                          />Animaux</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon9.svg"
+                            alt=""
+                          />Courses</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon10.svg"
+                            alt=""
+                          />Coup de main</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon11.svg"
+                            alt=""
+                          />Loisirs</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon12.svg"
+                            alt=""
+                          />Numérique</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon13.svg"
+                            alt=""
+                          />Arts & Culture</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon14.svg"
+                            alt=""
+                          />Jobbing</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#"
+                          ><img
+                            src="assets/img/legende_icon15.svg"
+                            alt=""
+                          />Anti-gaspi</a
+                        >
+                      </li>
+                    </ul>
                   </div>
-                  <div class="modal-body">
-                    <div class="modal__card">
-                      <ul>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon1.svg"
-                              alt=""
-                            />Associations</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon2.svg"
-                              alt=""
-                            />Commerces</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon3.svg"
-                              alt=""
-                            />Événements</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon4.svg"
-                              alt=""
-                            />Grande surface</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon5.svg"
-                              alt=""
-                            />Mairie</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon6.svg"
-                              alt=""
-                            />Covoiturage</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon7.svg"
-                              alt=""
-                            />Sport</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon8.svg"
-                              alt=""
-                            />Animaux</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon9.svg"
-                              alt=""
-                            />Courses</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon10.svg"
-                              alt=""
-                            />Coup de main</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon11.svg"
-                              alt=""
-                            />Loisirs</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon12.svg"
-                              alt=""
-                            />Numérique</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon13.svg"
-                              alt=""
-                            />Arts & Culture</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon14.svg"
-                              alt=""
-                            />Jobbing</a
-                          >
-                        </li>
-                        <li>
-                          <a href="#"
-                            ><img
-                              src="assets/img/legende_icon15.svg"
-                              alt=""
-                            />Anti-gaspi</a
-                          >
-                        </li>
-                      </ul>
+                </div>
+                <div class="modal__footer">
+                  <a href="#">Fermer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/img/active_map.png" alt="" />
+        <div class="location__cards">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-primary-location1"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+          >
+            <img src="assets/img/legende_icon4.svg" alt="" />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modal-content1">
+                <div class="modal-header modal-header2">
+                  <img
+                    src="assets/img/leclerc.png"
+                    alt=""
+                    class="leclerc_img"
+                  />
+                </div>
+                <div class="modal-body">
+                  <div class="leclerc__profile">
+                    <a href="#"
+                      ><img src="assets/img/legende_icon4.svg" alt=""
+                    /></a>
+                    <a href="#">E.Leclerc Agneaux</a>
+                  </div>
+                  <div class="address__leclerc">
+                    <div class="leclerc__contact">
+                      <a href="#"
+                        ><img
+                          src="assets/img/leclerc_location.svg"
+                          alt=""
+                        />Parc de L'Odyssée, 50180 Agneaux</a
+                      >
+                      <a href="#"
+                        ><img
+                          src="assets/img/leclerc_phone.svg"
+                          alt="tel:0233061818"
+                        />02 33 06 18 18</a
+                      >
+                      <a href="#"
+                        ><img src="assets/img/leclerc_time.svg" alt="#" />Lundi
+                        : 08:30 - 20:00</a
+                      >
                     </div>
                   </div>
-                  <div class="modal__footer">
-                    <a href="#">Fermer</a>
-                  </div>
+                </div>
+                <div class="modal__footer">
+                  <a href="#">Fermer</a>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="all__days">
-          <div class="single__day">
-            <span>Lun</span>
-            <button>4</button>
-          </div>
-          <div class="single__day">
-            <span>Mar</span>
-            <button>5</button>
-          </div>
-          <div class="single__day">
-            <span>Mer</span>
-            <button>6</button>
-          </div>
-          <div class="single__day">
-            <span>Jen</span>
-            <button>7</button>
-          </div>
-          <div class="single__day">
-            <span>Ven</span>
-            <button class="active">8</button>
-          </div>
-          <div class="single__day">
-            <span>Sam</span>
-            <button>9</button>
-          </div>
-          <div class="single__day">
-            <span>Dim</span>
-            <button>10</button>
-          </div>
-        </div>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-primary-location2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal3"
+          >
+            <img src="assets/img/legende_icon3.svg" alt="" />
+          </button>
 
-        <div class="day__main__card">
-          <div class="day__card">
-            <div class="day__card__left">
-              <span>ven</span>
-              <span>8</span>
-            </div>
-            <div class="day__card__right">
-              <div class="day__right__card">
-                <div class="single__day__card__top">
-                  <div class="day__user top__blck">
-                    <img src="assets/img/leclub.png" alt="" />
-                    <a href="#">Le club des fleurs de Lille</a>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modal-content1">
+                <div class="modal-header modal-header2">
+                  <img
+                    src="assets/img/evenement.png"
+                    alt=""
+                    class="leclerc_img"
+                  />
+                </div>
+                <div class="modal-body">
+                  <div class="leclerc__profile">
+                    <a href="#"
+                      ><img src="assets/img/legende_icon3.svg" alt=""
+                    /></a>
+                    <a href="#">Événement</a>
                   </div>
-                  <div class="top__blck">
-                    <img src="assets/img/depart.svg" alt="" />
-                    <p>De <span>13h30</span> à <span>18h00 Gratuit</span></p>
+                  <div class="address__leclerc">
+                    <div class="leclerc__address">
+                      <a href="#"><img src="assets/img/leclub.png" alt="" /></a>
+                      <p>Le club des fleurs de Lille</p>
+                    </div>
+                    <a href="#" class="leclerc__title"
+                      >Atelier préparer mon jardin pour l’été</a
+                    >
+                    <div class="leclerc__contact">
+                      <a href="#"
+                        ><img src="assets/img/leclerc_time.svg" alt="#" />Samedi
+                        28 septembre De <span>14h30</span> à
+                        <span>18h00 Gratuit</span></a
+                      >
+                      <a href="#"
+                        ><img
+                          src="assets/img/leclerc_location.svg"
+                          alt=""
+                        />Parc de L'Odyssée, 50180 Agneaux</a
+                      >
+                      <a href="#"
+                        ><img
+                          src="assets/img/leclerc_phone.svg"
+                          alt="tel:0233061818"
+                        />02 33 06 18 18</a
+                      >
+                    </div>
+                    <a href="#" class="leclerc__btn">Détail de l’événement</a>
                   </div>
                 </div>
-                <div class="single__day__card">
-                  <div class="day__card__img day__card__img1">
-                    <img src="assets/img/agenda.svg" alt="" />
-                  </div>
-                  <div class="day__card__content">
-                    <p>Atelier préparer mon jardin pour l’été</p>
-                    <a href="#">Détail de l’événement</a>
-                  </div>
-                </div>
-              </div>
-              <div class="day__right__card">
-                <div class="single__day__card__top">
-                  <div class="day__user top__blck">
-                    <img src="assets/img/jules.png" alt="" />
-                    <a href="#">Jules M.</a>
-                  </div>
-                  <div class="top__blck">
-                    <img src="assets/img/depart.svg" alt="" />
-                    <p>Départ<span> 14h00</span></p>
-                  </div>
-                  <div class="top__blck">
-                    <p><span>Covoiturage</span></p>
-                  </div>
-                </div>
-                <div class="single__day__card">
-                  <div class="day__card__img day__card__img2">
-                    <img src="assets/img/jules_car.svg" alt="" />
-                  </div>
-                  <div class="day__card__content">
-                    <p>
-                      <span>Jules M.</span> propose
-                      <span>un covoiturage</span> Lille > Strasbourg
-                    </p>
-                    <a href="#">Détail de l’annonce</a>
-                  </div>
+                <div class="modal__footer">
+                  <a href="#">Fermer</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="day__card">
-            <div class="day__card__left">
-              <span>ven</span>
-              <span>9</span>
-            </div>
-            <div class="day__card__right">
-              <div class="day__right__card">
-                <div class="single__day__card__top">
-                  <div class="day__user top__blck">
-                    <img src="assets/img/leclub.png" alt="" />
-                    <a href="#">Le club des fleurs de Lille</a>
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-primary btn-primary-location3"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal4"
+          >
+            <img src="assets/img/legende_icon6.svg" alt="" />
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal4"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content modal-content1">
+                <div class="modal-header modal-header2">
+                  <img
+                    src="assets/img/article.png"
+                    alt=""
+                    class="leclerc_img"
+                  />
+                </div>
+                <div class="modal-body">
+                  <div class="leclerc__profile">
+                    <a href="#"
+                      ><img src="assets/img/legende_icon6.svg" alt=""
+                    /></a>
+                    <a href="#">Covoiturage</a>
                   </div>
-                  <div class="top__blck">
-                    <img src="assets/img/depart.svg" alt="" />
-                    <p>De <span>13h30</span> à <span>18h00 Gratuit</span></p>
+                  <div class="address__leclerc">
+                    <div class="leclerc__address">
+                      <a href="#"><img src="assets/img/jules.png" alt="" /></a>
+                      <p>
+                        Publié par <span>Jules M. ,</span> le
+                        <span>12 09 2022</span>
+                      </p>
+                    </div>
+                    <a href="#" class="leclerc__title leclerc__title2"
+                      >Jules M. <span>propose</span> un covoiturage
+                      <span>Lille > Strasbourg</span></a
+                    >
+                    <div class="leclerc__contact">
+                      <a href="#"
+                        ><img src="assets/img/leclerc_time.svg" alt="#" />Samedi
+                        28 septembre Départ <span>14h00</span></a
+                      >
+                    </div>
+                    <a href="#" class="leclerc__btn">Lire l’annonce</a>
                   </div>
                 </div>
-                <div class="single__day__card">
-                  <div class="day__card__img day__card__img1">
-                    <img src="assets/img/agenda.svg" alt="" />
-                  </div>
-                  <div class="day__card__content">
-                    <p>Atelier préparer mon jardin pour l’été</p>
-                    <a href="#">Détail de l’événement</a>
-                  </div>
-                </div>
-              </div>
-              <div class="day__right__card">
-                <div class="single__day__card__top">
-                  <div class="day__user top__blck">
-                    <img src="assets/img/jules.png" alt="" />
-                    <a href="#">Jules M.</a>
-                  </div>
-                  <div class="top__blck">
-                    <img src="assets/img/depart.svg" alt="" />
-                    <p>Départ<span> 14h00</span></p>
-                  </div>
-                  <div class="top__blck">
-                    <p><span>Covoiturage</span></p>
-                  </div>
-                </div>
-                <div class="single__day__card">
-                  <div class="day__card__img day__card__img2">
-                    <img src="assets/img/jules_car.svg" alt="" />
-                  </div>
-                  <div class="day__card__content">
-                    <p>
-                      <span>Jules M.</span> propose
-                      <span>un covoiturage</span> Lille > Strasbourg
-                    </p>
-                    <a href="#">Détail de l’annonce</a>
-                  </div>
+                <div class="modal__footer">
+                  <a href="#">Fermer</a>
                 </div>
               </div>
             </div>
