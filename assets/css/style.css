@@ -10,8 +10,9 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  max-width: 767px;
+  max-width: 500px;
   margin: 0 auto;
+  position: relative;
 }
 ul,
 ol {
@@ -48,6 +49,9 @@ p {
 p > span {
   font-weight: 600;
 }
+a > span {
+  font-weight: 600;
+}
 a {
   text-decoration: none;
 }
@@ -75,7 +79,7 @@ main {
 .container-sm,
 .container-xl,
 .container-xxl {
-  max-width: 767px;
+  max-width: 100%;
   margin: 0 auto;
 }
 /*===================== REUSABLE CSS AREA END =====================*/
@@ -160,17 +164,19 @@ section#hero__area {
 /*===================== ACCUEIL CSS AREA START =====================*/
 section#accueil__area {
   position: fixed;
-  width: 100%;
   bottom: 0px;
   background: content-box;
   padding-bottom: 29px;
   z-index: 9;
+  left: 0;
+  right: 0px;
 }
 
 .accueil__btns ul {
   display: flex;
   align-items: end;
   justify-content: space-around;
+  max-width: 500px;
 }
 
 .accueil__btns ul li a img {
@@ -236,6 +242,10 @@ section#accueil__area:after {
 .accueil__btns {
   position: relative;
   z-index: 1;
+  max-width: 500px;
+  right: 0px;
+  left: 0px;
+  margin: 0 auto;
 }
 /*===================== ACCUEIL CSS AREA END =====================*/
 
@@ -277,7 +287,10 @@ button.btn.btn-primary {
   border-radius: 7px;
   border: none;
 }
-
+.d_top_btn,
+.btn-primary {
+  height: 50px;
+}
 .carte__liste:after {
   content: "";
   position: absolute;
@@ -321,14 +334,24 @@ button.btn.btn-primary img {
 
 .carte__liste {
   width: 102px;
+  align-items: end;
+}
+.listing__carte {
+  width: auto;
 }
 
+.listing__carte:after {
+  display: none;
+}
 section#document__section {
   margin-top: -26px;
   margin-bottom: 100px;
   padding: 0px 25px;
+  position: relative;
 }
-
+.active__locations {
+  margin-bottom: 0px !important;
+}
 .all__days {
   padding: 25px 0px 10px;
   border-bottom: 1px solid #e8e8e8;
@@ -371,9 +394,6 @@ section#document__section {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-}
-
-.day__main__card {
 }
 
 .day__user.top__blck img {
@@ -423,7 +443,7 @@ section#document__section {
   display: flex;
   align-items: start;
   gap: 13px;
-  padding: 0px 25px 15px;
+  padding: 0px 10px 15px;
   border-bottom: 1px solid #e8e8e8;
   margin-bottom: 15px;
 }
@@ -532,6 +552,10 @@ section#document__section {
 
 .modal-body {
   padding: 0 !important;
+}
+
+.modal-dialog.modal-dialog-centered {
+  padding: 0px 15px;
 }
 
 .accordion-item {
@@ -882,7 +906,6 @@ section#syrendre__area {
 section#interesser__area {
   margin-bottom: 108px;
 }
-/*===================== single-evenement CSS AREA END =====================*/
 .owl-stage-outer {
   margin-left: -171px;
   margin-right: -65px;
@@ -890,4 +913,191 @@ section#interesser__area {
 
 .owl-carousel.owl-drag .owl-item {
   max-width: 320px;
+}
+/*===================== single-evenement CSS AREA END =====================*/
+
+/*===================== carte-interactive CSS AREA START =====================*/
+.modal__card > ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #2d2659;
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.modal__card > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+  row-gap: 20px;
+}
+
+.modal__card > ul li a img {
+  width: 40px;
+}
+
+.modal__footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.modal__footer a {
+  color: #2d2659;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.active__legende {
+  justify-content: space-between;
+}
+
+.active__legende a span {
+  letter-spacing: -0.6px;
+}
+/*===================== carte-interactive CSS AREA END =====================*/
+.location__cards .btn-primary {
+  padding: 0px !important;
+  width: 40px;
+  position: absolute;
+  background: transparent;
+}
+.btn-primary-location1 {
+  top: 149px;
+  left: 71px;
+}
+
+.btn-primary-location2 {
+  top: 216px;
+  left: 88px;
+}
+.location__cards .btn-primary img {
+  width: 100% !important;
+}
+.active__locations > img {
+  margin-top: -24px;
+}
+.active__locations {
+  padding: 0px !important;
+}
+.document__top__btn2 {
+  padding: 0px 25px;
+}
+img.leclerc_img {
+  width: 100%;
+  height: 100%;
+}
+.modal-header2 {
+  padding: 0 !important;
+  border-bottom: none;
+}
+.leclerc__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 15px;
+  margin-top: -30px;
+}
+
+.leclerc__profile a:last-child {
+  box-shadow: 0px 0px 0px 0px #0000001a;
+  box-shadow: 0px 1px 1px 0px #0000001a;
+  box-shadow: 0px 3px 3px 0px #00000017;
+  /* box-shadow: 0px 6px 3px 0px #0000000D; */
+  /* box-shadow: 0px 10px 4px 0px #00000003; */
+  /* box-shadow: 0px 16px 4px 0px #00000000; */
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 8px;
+  font-weight: 600;
+  color: #2d2659;
+  background: #fff;
+}
+.leclerc__contact a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 8px;
+  color: #2d2659;
+}
+
+.leclerc__contact a img {
+  width: 8px;
+}
+
+.leclerc__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-content {
+  overflow: hidden;
+  border-radius: 7px !important;
+}
+.btn-check:checked + .location__cards .btn,
+.location__cards .btn.active,
+.location__cards .btn.show,
+.location__cards .btn:first-child:active,
+:not(.btn-check) + .location__cards .btn:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: initial !important;
+}
+.location__cards .btn {
+  box-shadow: none !important;
+}
+.address__leclerc {
+  padding: 15px;
+}
+
+.leclerc__address a img {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.leclerc__address {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.leclerc__address p {
+  color: #2d2659;
+  font-size: 8px;
+}
+
+.address__leclerc > .leclerc__title {
+  margin: 5px 0px 15px;
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2d2659;
+}
+.modal-content.modal-content1 {
+  max-width: 200px !important;
+  margin: 0 auto !important;
+}
+a.leclerc__btn {
+  background: #2d2659;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 8px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+}
+.btn-primary-location3 {
+  top: 290px;
+  left: 54px;
+}
+.leclerc__title2 {
+  font-weight: 400 !important;
 }
