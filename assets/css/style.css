@@ -1101,3 +1101,6 @@ a.leclerc__btn {
 .leclerc__title2 {
   font-weight: 400 !important;
 }
+body.modal-open {
+  padding: 0 !important;
+}
