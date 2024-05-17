@@ -114,11 +114,89 @@
             >
           </div>
 
-          <div class="celender d_top_btn">
-            <button>
+          <div class="filter">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary celender d_top_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModalx"
+            >
               Décembre <span><i class="fa-solid fa-sort-down"></i></span>
             </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModalx"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <img src="assets/img/samedi_calender.svg" alt="" />
+                    <h4>Filtrer</h4>
+                  </div>
+                  <div class="modal-body">
+                    <div class="calender__cards">
+                      <div class="single__calenders">
+                        <div class="year year_top">
+                          <span>2022</span>
+                        </div>
+                        <div class="months">
+                          <a href="#" class="active">Décembre</a>
+                        </div>
+                        <div class="single__calender">
+                          <div class="year">
+                            <span>2023</span>
+                          </div>
+                          <div class="months">
+                            <a href="#">Janvier</a>
+                            <a href="#">Février</a>
+                            <a href="#">Mars</a>
+                            <a href="#">Avril</a>
+                            <a href="#">Mai</a>
+                            <a href="#">Juin</a>
+                            <a href="#">Juillet</a>
+                            <a href="#">Août</a>
+                            <a href="#">Septembre</a>
+                            <a href="#">Octobre</a>
+                            <a href="#">Novembre</a>
+                            <a href="#">Décembre</a>
+                          </div>
+                        </div>
+                        <div class="single__calender">
+                          <div class="year">
+                            <span>2024</span>
+                          </div>
+                          <div class="months">
+                            <a href="#">Janvier</a>
+                            <a href="#">Février</a>
+                            <a href="#">Mars</a>
+                            <a href="#">Avril</a>
+                            <a href="#">Mai</a>
+                            <a href="#">Juin</a>
+                            <a href="#">Juillet</a>
+                            <a href="#">Août</a>
+                            <a href="#">Septembre</a>
+                            <a href="#">Octobre</a>
+                            <a href="#">Novembre</a>
+                            <a href="#">Décembre</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fermer">
+                      <button class="fermer_btn">fermer</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="carte__liste d_top_btn listing__carte">
             <a href="#"
               ><img src="assets/img/carte.svg" alt="" /><span>Carte</span></a
@@ -213,7 +291,7 @@
             <h3>Ces évènements peuvent vous intéresser</h3>
           </div>
           <div class="interesser__card__area">
-            <div class="interesser__all__card owl-carousel owl-theme">
+            <div class="interesser__all__card">
               <div class="listing__order__single__card">
                 <img src="assets/img/interesser.png" alt="" />
                 <div class="listing__order__content">
